@@ -19,8 +19,8 @@
  */
 uint8_t turn_off_lights(uint8_t current_state, uint8_t light_mask)
 {
-  // Modificar aqui
-  return  0;
+  uint8_t new_function_state = current_state & ~(light_mask);
+  return  ;
 }
 
 
