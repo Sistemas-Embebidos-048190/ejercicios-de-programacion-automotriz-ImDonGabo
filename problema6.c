@@ -8,8 +8,8 @@
  */
 float convert_adc_to_celsius(uint16_t adc_value)
 {
-  // Modificar esta funcion
-  return 0;
+  float temperatura = (adc_value/1023.0)*190.0 - 40;
+  return temperatura;
 }
 
 
