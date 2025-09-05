@@ -18,7 +18,9 @@
  */
 uint16_t set_ecu_config(uint16_t current_config, uint16_t mask, uint16_t values)
 {
-    return 0;
+  current_config &= ~mask;
+  current_config |= (values & mask);
+  return current_config;
 }
 
 
